@@ -92,6 +92,7 @@
     height: 100px;
     line-height: 100px;
     width: 100%;
+    position: relative;
 }
 
 .header-logo, .header-category, .header-category li {
@@ -109,19 +110,91 @@
     height: 56px;
 }
 
-.header-category a {
+.header-category .header-category-title {
     font-size: 16px;
     color: #333;
     display: block;
     padding: 0px 10px;
 }
 
+.header-category li:hover .header-category-title {
+    color: #ff6700;
+}
+
+.item-list-content {
+    height: 0px;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    background-color: #fff;
+    /* 
+        注意：此处一定要设置overflow 否则父元素高度为0，子元素高度不为0仍然会显示出来。
+            而如果使用display来隐藏，触发hover的时候设置display:none，则无法使用到transition的渐进效果。
+            display和transition冲突。
+            通过设置overflow: hidden完美解决这个问题，搞了一天。
+    */
+    overflow: hidden;
+    transition: box-shadow .2s, height .3s;
+}
+
+.header-category li.show:hover ~ .item-list-content,
+.item-list-content:hover {
+    height: 229px;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .18);
+}
+
+.item-list {
+    position: relative;
+    height: 100%;
+}
+
+.item-list li {
+    position: relative;
+    width: 180px;
+    height: 166px;
+    padding: 35px 12px 0px;
+    text-align: center;
+}
+
+.item-list li:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 0px;
+    right: 0;
+    height: 100px;
+    width: 1px;
+    background-color: #e0e0e0;
+}
+
+.item-list img {
+    width: 180px;
+    margin-bottom: 18px;
+}
+
+.item-list .title, .item-list .price {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.item-list .title {
+    color: #333;
+}
+
+.item-list .price {
+    color: #ff6700;
+}
+
 .header-query {
     float: right;
 }
 
-.query-input:hover,
-.query-input:hover + .query-icon {
+.header-query:hover .query-input,
+.header-query:hover .query-icon {
     border-color: #b0b0b0;
     transition: all .3s;
 }
@@ -158,8 +231,12 @@
     border-left: none;
 }
 
+#query-icon:hover {
+    border: 1px solid #ff6700;
+    border-left: none;
+}
+
 .query-icon:hover i {
-    border-color: #ff6700;
     background-color: #ff6700;
     color: #fff;
     transition: all .3s;

@@ -178,6 +178,7 @@
     */
     overflow: hidden;
     transition: box-shadow .2s, height .3s;
+    z-index: 99;
 }
 
 .header-category li.show:hover ~ .item-list-content,
@@ -292,3 +293,168 @@
     text-align: center;
 }
 /* 网页头部LOGO栏样式表 结束 */
+
+/* 网页菜单栏轮播图样式表 开始 */
+
+.menu-swiper-banner {
+    height: 670px;
+    margin: 0 auto;
+}
+
+.menu-swiper {
+    position: relative;
+    width: 100%;
+    height: 460px;
+}
+
+/* 左侧菜单 */
+.menu-swiper .menu {
+    position: relative;
+    padding: 20px 0px;
+    height: 420px;
+    width: 234px;
+    background-color: rgba(105,101,101,.6);
+    z-index: 12;
+}
+
+.menu li {
+    height: 42px;
+    line-height: 42px;
+    width: 204px;
+    padding-left: 30px;
+}
+
+.menu li:hover {
+    background-color: #ff6700;
+}
+
+.menu li:hover .sub-menu-item,
+.sub-menu-item:hover {
+    display: block;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.menu i {
+    font-size: 14px;
+    float: right;
+    line-height: 42px;
+    padding-right: 30px;
+}
+
+.sub-menu-item {
+    position: absolute;
+    top: 0px;
+    left: 234px;
+    height: 459px;
+    width: 992px;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, .3);
+    background-color: #fff;
+    z-index: 99;
+    display: none;
+    color: #333;
+}
+
+/* 轮播图图片 */
+.menu-swiper .swiper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 460px;
+    width: 992px;
+    color: #fff;
+}
+
+.swiper-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    line-height: 460px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.swiper-item img {
+    width: 1226px;
+    height: 460px;
+    transform: translateX(-234px);
+}
+
+.curr-item {
+    opacity: 1;
+}
+
+/* 轮播图左右按钮 */
+.swiper-btn {
+    position: absolute;
+    top: 195px;
+    width: 41px;
+    height: 69px;
+    line-height: 69px;
+    font-size: 48px;
+    text-align: center;
+    z-index: 16;
+}
+
+.swiper-btn a {
+    display: block;
+    line-height: 69px;
+    color: #c0c0c0;
+}
+
+.swiper-btn i {
+    line-height: 69px;
+}
+
+.swiper-btn:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.swiper-btn:hover a {
+    color: #e0e0e0;
+}    
+
+.swiper-left {
+    left: 0px;
+}
+
+.swiper-right {
+    right: 0px;
+}
+
+.swiper-dots {
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+    height: 12px;
+    width: 128px;
+    z-index: 16;
+}
+
+.dot {
+    float: left;
+    background-color: #aaa;
+    margin: 0 4px;
+    width: 9px;
+    height: 9px;
+    border: 1px solid rgba(224, 224, 224, .15);
+    border-radius: 50%;
+}
+
+.dot:hover, .curr-dot {
+    background-color: #e0e0e0;
+    border: 1px solid #aaa;
+}
+
+/* 菜单横幅样式表 */
+.menu-banner {
+    width: 100%;
+    height: 170px;
+    margin-top: 14px;
+}
+
+/* 网页菜单栏轮播图样式表 结束 */

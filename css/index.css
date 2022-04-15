@@ -452,9 +452,151 @@
 
 /* 菜单横幅样式表 */
 .menu-banner {
+    position: relative;
     width: 100%;
     height: 170px;
     margin-top: 14px;
 }
 
+.menu-banner .menu-btn {
+    width: 228px;
+    height: 164px;
+    background-color: #5f5750;
+    padding: 3px;
+    text-align: center;
+}
+
+.menu-btn li {
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 82px;
+    padding: 0 3px;
+}
+
+.menu-btn li:hover a {
+    opacity: 1;
+}
+
+.menu-btn li::before,
+.menu-btn li::after {
+    position: absolute;
+    content: '';
+    background-color: #665e57;
+}
+
+.menu-btn li::before {
+    top: 0px;
+    left: 6px;
+    height: 1px;
+    width: 58px;
+}
+
+
+.menu-btn li::after {
+    top: 6px;
+    left: 0px;
+    height: 70px;
+    width: 1px;
+}
+
+.menu-btn img {
+    width: 24px;
+    height: 24px;
+    margin: 0 23px 4px;
+}
+
+.menu-btn a {
+    display: block;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    opacity: .7;
+    padding-top: 18px;
+}
+
+.product-banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 992px;
+    height: 170px;
+}
+
+.product-banner li {
+    float: left;
+}
+
+.product-banner li:first-child {
+    margin-left: 14px;
+}
+
+.product-banner li:not(:first-child) {
+    margin-left: 15px;
+}
+
+.product-banner img {
+    width: 316px;
+    height: 170px;
+}
+
 /* 网页菜单栏轮播图样式表 结束 */
+
+/* 中间banner样式表 开始 */
+
+.center-banner {
+    margin: 22px auto;
+}
+
+/* 中间banner样式表 结束 */
+
+/* 手机产品样式表 开始 */
+.product-phone {
+    width: 1226px;
+    height: 686px;
+    margin-bottom: 8px;
+}
+
+.phone-title {
+    position: relative;
+    height: 58px;
+    line-height: 58px;
+}
+
+.phone-text {
+    line-height: 58px;
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.phone-more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 58px;
+    transition: all .4s;
+}
+
+.phone-more a {
+    padding-right: 16px;
+    font-size: 16px;
+    color: #333;
+}
+
+.phone-more span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #aaa;
+    color: #fff;
+}
+
+.phone-more i {
+    position: absolute;
+    color: #fff;
+}
+
+/* 手机产品样式表 结束 */

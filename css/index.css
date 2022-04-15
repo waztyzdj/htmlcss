@@ -363,9 +363,9 @@
 .menu-swiper .swiper {
     position: absolute;
     top: 0px;
-    right: 0px;
+    left: 0px;
     height: 460px;
-    width: 992px;
+    width: 1226px;
     color: #fff;
 }
 
@@ -381,7 +381,6 @@
 .swiper-item img {
     width: 1226px;
     height: 460px;
-    transform: translateX(-234px);
 }
 
 .curr-item {
@@ -419,7 +418,7 @@
 }    
 
 .swiper-left {
-    left: 0px;
+    left: 234px;
 }
 
 .swiper-right {

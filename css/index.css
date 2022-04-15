@@ -541,6 +541,14 @@
 
 /* 网页菜单栏轮播图样式表 结束 */
 
+/* 产品主页样式表 开始 */
+.page-main {
+    width: 100%;
+    padding-top: 8px;
+    background-color: #f5f5f5;
+}
+/* 产品主页样式表 结束 */
+
 /* 中间banner样式表 开始 */
 
 .center-banner {
@@ -612,6 +620,79 @@
     position: absolute;
     color: #fff;
     transition: all .3s;
+}
+
+.phone-product {
+    position: relative;
+    height: 628px;
+}
+
+.main-phone-product img {
+    width: 234px;
+    height: 614px;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.main-phone-product img:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+.phone-product-list {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 992px;
+    height: 614px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+.phone-product-list li {
+    float: left;
+    width: 234px;
+    height: 300px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    transition: all .5s;
+}
+
+.phone-product-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+.phone-product-list li a {
+    display: block;
+    width: 234px;
+    height: 260px;
+    padding: 20px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.phone-product-list img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 18px;
+}
+
+.phone-product-list .title {
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    font-weight: 400;
+    color: #333;
+    margin: 0 10px 2px;
+}
+
+.phone-product-list .desc {
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+}
+
+.phone-product-list .price {
+    color: #ff6700;
 }
 
 /* 手机产品样式表 结束 */

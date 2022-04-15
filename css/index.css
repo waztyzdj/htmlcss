@@ -573,13 +573,22 @@
     top: 0;
     right: 0;
     line-height: 58px;
-    transition: all .4s;
+}
+
+.phone-more:hover a {
+    color: #ff6700;
+}
+
+.phone-more:hover span {
+    background-color: #ff6700;
+    color: #fff;
 }
 
 .phone-more a {
-    padding-right: 16px;
+    padding-right: 28px;
     font-size: 16px;
     color: #333;
+    transition: all .3s;
 }
 
 .phone-more span {
@@ -587,15 +596,22 @@
     top: 0;
     right: 0;
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    margin: 19px 0;
     background-color: #aaa;
+    border-radius: 50%;
     color: #fff;
+    transition: all .3s;
 }
 
 .phone-more i {
+    display: block;
+    line-height: 20px;
+    padding-left: 6px;
     position: absolute;
     color: #fff;
+    transition: all .3s;
 }
 
 /* 手机产品样式表 结束 */

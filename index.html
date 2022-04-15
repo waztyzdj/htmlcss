@@ -307,26 +307,26 @@
                     <img src="./img/swiper/swiper-04.webp" alt="">
                 </div>
                 <div class="swiper-btn swiper-left">
-                    <a href="javascript:void(0);" onclick="toImage((currCount - 1 + maxCount) % maxCount)">
+                    <a href="javascript:void(0);" onclick="toImage((currCount - 1 + maxCount) % maxCount);doSetInterval()">
                         <i class="fa-solid fa-angle-left"></i>
                     </a>
                 </div>
                 <div class="swiper-btn swiper-right">
-                    <a href="javascript:void(0);" onclick="toImage((currCount + 1) % maxCount)">
+                    <a href="javascript:void(0);" onclick="toImage((currCount + 1) % maxCount);doSetInterval()">
                         <i class="fa-solid fa-angle-right"></i>
                     </a>
                 </div>
                 <div class="swiper-dots">
-                    <a href="javascript:void(0);" onclick="toImage(0)">
+                    <a href="javascript:void(0);" onclick="toImage(0);doSetInterval()">
                         <div class="dot curr-dot"></div>
                     </a>
-                    <a href="javascript:void(0);" onclick="toImage(1)">
+                    <a href="javascript:void(0);" onclick="toImage(1);doSetInterval()">
                         <div class="dot"></div>
                     </a>
-                    <a href="javascript:void(0);" onclick="toImage(2)">
+                    <a href="javascript:void(0);" onclick="toImage(2);doSetInterval()">
                         <div class="dot"></div>
                     </a>
-                    <a href="javascript:void(0);" onclick="toImage(3)">
+                    <a href="javascript:void(0);" onclick="toImage(3);doSetInterval()">
                         <div class="dot"></div>
                     </a>
                 </div>

@@ -2,6 +2,7 @@
 
 const maxCount = 4;
 let currCount = 0;
+let interval = null;
 // 跳转到第n张图片
 function toImage(n) {
     currCount = n
@@ -11,7 +12,12 @@ function toImage(n) {
 
 // 设置自动播放
 function doOnload() {
-    setInterval(() => {
+    doSetInterval()
+}
+
+function doSetInterval() {
+    clearInterval(interval);
+    interval = setInterval(() => {
         toImage((currCount + 1) % maxCount);
     }, 3000)
 }

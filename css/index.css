@@ -696,3 +696,152 @@
 }
 
 /* 手机产品样式表 结束 */
+
+/* 首页页脚样式表 开始 */
+
+.foot {
+    width: 100%;
+    height: 380px;
+    background-color: #fff
+}
+
+.foot-title {
+    height: 25px;
+    line-height: 25px;
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.foot-title ul {
+    display: flex;
+}
+
+.foot-title li {
+    position: relative;
+    float: left;
+    flex: 1;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+
+.foot-title li:not(:first-child)::before {
+    float: left;
+    content: '';
+    width: 1px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #e0e0e0;
+}
+
+.foot-title a {
+    color: #616161;
+    font-size: 16px;
+    transition: all .2s;
+}
+
+.foot-title a:hover {
+    color: #ff6700;
+}
+
+.foot-title i {
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+    transition: all .1s;
+}
+
+.foot-link {
+    padding: 40px 0;
+}
+
+.foot-link dl {
+    width: 160px;
+    float: left;
+}
+
+.foot-link dt {
+    margin-bottom: 26px;
+}
+
+.foot-link dd {
+    margin-top: 10px;
+}
+
+.foot-link a {
+    color: #616161;
+    font-size: 12px;
+}
+
+.foot-link a:hover {
+    color: #ff6700;
+}
+
+.link-us {
+    float: right;
+    width: 244px;
+    text-align: center;
+    border-left: 1px solid #e0e0e0;
+}
+
+.hot-line {
+    font-size: 22px;
+    color: #ff6700;
+    margin-bottom: 2px;
+}
+
+.link-time {
+    font-size: 12px;
+    color: #616161;
+    margin-bottom: 5px;
+}
+
+.person-link {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    margin: 0 auto;
+    transition: all .3s;
+}
+
+.person-link:hover {
+    color: #fff;
+    background-color: #ff6700;
+}
+
+.fouce-us {
+    position: relative;
+    font-size: 12px;
+    color: #616161;
+    margin: 5px 0;
+}
+
+.fouce-us i {
+    position: relative;
+    top: 3px;
+    font-size: 20px;
+    color: #616161;
+    margin-bottom: 5px;
+}
+
+.fouce-us i:hover {
+    color: #ff6700;
+}
+
+.fouce-us .weixin:hover ~ img {
+    display: block;
+}
+
+.fouce-us img {
+    position: absolute;
+    top: 24px;
+    left: 110px;
+    width: 126px;
+    height: 126px;
+    display: none;
+}
+
+/* 首页页脚样式表 结束 */

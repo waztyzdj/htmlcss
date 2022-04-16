@@ -317,18 +317,18 @@
     z-index: 12;
 }
 
-.menu li {
+.menu .menu-item {
     height: 42px;
     line-height: 42px;
     width: 204px;
     padding-left: 30px;
 }
 
-.menu li:hover {
+.menu .menu-item:hover {
     background-color: #ff6700;
 }
 
-.menu li:hover .sub-menu-item,
+.menu .menu-item:hover .sub-menu-item,
 .sub-menu-item:hover {
     display: block;
 }
@@ -357,6 +357,30 @@
     z-index: 99;
     display: none;
     color: #333;
+}
+
+.sub-menu-item ul {
+    float: left;
+    width: 248px;
+    height: 458px;
+    padding: 2px 0;
+}
+
+.sub-menu-item li {
+    width: 206px;
+    height: 40px;
+    line-height: 40px;
+    padding: 18px 20px;
+}
+
+.sub-menu-item li:hover {
+    color: #ff6700;
+}
+
+.sub-menu-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
 }
 
 /* 轮播图图片 */

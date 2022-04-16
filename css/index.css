@@ -396,7 +396,6 @@
     line-height: 69px;
     font-size: 48px;
     text-align: center;
-    z-index: 16;
 }
 
 .swiper-btn a {
@@ -431,7 +430,6 @@
     right: 10px;
     height: 12px;
     width: 128px;
-    z-index: 16;
 }
 
 .dot {
@@ -845,3 +843,70 @@
 }
 
 /* 首页页脚样式表 结束 */
+
+
+/* 侧边栏样式表 开始 */
+.site-bar {
+    position: fixed;
+    top: 180px;
+    right: 0px;
+    background-color: #fff;
+}
+
+.site-bar .btn {
+    width: 84px;
+    height: 72px;
+    border: 1px solid #e0e0e0;
+    color: #666;
+    text-align: center;
+    padding-top: 20px;
+    transition: all .5s;
+}
+
+.site-bar .btn:hover {
+    color: #ff6700;
+}
+
+.site-bar i {
+    font-size: 24px;
+}
+
+.site-bar .btn .icon{
+    padding-bottom: 6px;
+}
+
+.gift-qr-code {
+    position: absolute;
+    top: 0;
+    left: -140px;
+    width: 102px;
+    height: 162px;
+    padding: 14px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    transition: all .5s;
+}
+
+.gift-qr-code img {
+    width: 100px;
+    height: 100px;
+    margin: 6px 0;
+}
+
+.gift-qr-code .text {
+    position: relative;
+    width: 82px;
+    height: 42px;
+    margin: 6px 9px 0;
+}
+
+.app-code-btn:hover + .gift-qr-code,
+.gift-qr-code:hover {
+    visibility: visible;
+    opacity: 1;
+    color: #666;
+}
+/* 侧边栏样式表 结束 */
